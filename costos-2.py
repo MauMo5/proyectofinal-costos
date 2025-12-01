@@ -9,8 +9,8 @@ st.header('Descripción de la actividad')
 
 def user_input_features():
   # Entradas del usuario
-  Presupuesto = st.number_input('Presupuesto de la actividad:', min_value=0, max_value=10000, value = 0, step = 1)
-  Tiempo = st.number_input('Tiempo invertido en la actividad',  min_value=0, max_value=10000, value = 0, step = 1)
+  Presupuesto = st.number_input('Presupuesto de la actividad:', min_value=0, max_value=10000, value = 0, )
+  Tiempo = st.number_input('Tiempo invertido en la actividad',  min_value=0, max_value=10000, value = 0, )
   Tipo = st.number_input('Tipo de actividad 1=Alimentos/salud, 2=Servicios, 3=Ejercicio/Deporte, 4=Ocio, 5=Académico, 6=Transporte', min_value=1, max_value=6, value = 0, step = 1)
   Momento = st.number_input('Momento del día en el que tu actividad se desarrolla, 1=Mañana, 2=Tarde, 3=Noche:', min_value=1, max_value=3, value = 0, step = 1)
   Personas = st.number_input('Número de personas invlolucradas en el gasto', min_value=1, max_value=50, value = 0, step = 1)
